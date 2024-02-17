@@ -17,3 +17,6 @@ https://caiba123.oss-cn-beijing.aliyuncs.com/bandicam%202024-02-17%2018-35-41-35
 # 建议参考
       1.驱动读写CV https://github.com/rogxo/ReadPhys
       2.部分函数特征码 NtQueryVirtualMemory NtProtectVirtualMemory 等等 如出现不兼容情况 参考 https://github.com/Oxygen1a1/oxgenPdb项目
+
+开发Tps游戏 缺地编  来个大手子 一起合作开发游戏 有意向可以加我  目前8人（学生狗）
+
