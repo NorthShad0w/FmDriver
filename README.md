@@ -8,3 +8,7 @@
       5.查询内存
  # 驱动注入演示
 https://caiba123.oss-cn-beijing.aliyuncs.com/bandicam%202024-02-17%2018-35-41-357.mp4
+
+# 建议参考
+      1.驱动读写 https://github.com/rogxo/ReadPhys
+      2.部分函数特征码 NtQueryVirtualMemory NtProtectVirtualMemory 如出现不兼容情况 参考https://github.com/Oxygen1a1/oxgenPdb项目
