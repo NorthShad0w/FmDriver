@@ -11,4 +11,4 @@ https://caiba123.oss-cn-beijing.aliyuncs.com/bandicam%202024-02-17%2018-35-41-35
 
 # 建议参考
       1.驱动读写建议CV https://github.com/rogxo/ReadPhys
-      2.部分函数特征码 NtQueryVirtualMemory NtProtectVirtualMemory 如出现不兼容情况 参考 https://github.com/Oxygen1a1/oxgenPdb项目
+      2.部分函数特征码 NtQueryVirtualMemory NtProtectVirtualMemory 等等 如出现不兼容情况 参考 https://github.com/Oxygen1a1/oxgenPdb项目
