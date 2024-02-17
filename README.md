@@ -2,7 +2,7 @@
       ps:某个盆友驱动 花了点时间修改了下 都是CV的 疯狂的抄
 # 驱动功能
       1.驱动读写 使用 `MmCopyVirtualMemory读取伪造的进程对象作为目标进程 写入使用MmCopyVirtualMemor 失败 则改为Mdl写入
-      2.驱动注入 线程注入（伪装隐藏线程）并清空线程回调通知  （ps:如果不禁用 PUBG 会出现内存异常）
+      2.驱动注入 线程注入（伪装隐藏线程）并清空线程回调通知  （ps:如果不禁用 PUBG 会出现内存异常）buid 自行杀毒 加密 解密 dll字节
       3.通讯 修改  获取 \\Device\\Null `Null.sys驱动的 FastIoDispatch` 表  `FastIoDeviceControl` 成员修改为 `DeviceIoControl`
             当有快速I/O设备控制操作被请求时，`DeviceIoControl` 函数将被调用
       4.获取模块
