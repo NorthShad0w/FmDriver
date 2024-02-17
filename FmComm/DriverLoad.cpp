@@ -4,12 +4,12 @@
 #pragma comment(lib, "Wininet.lib")
 #pragma warning(disable:4996)
 
-const char* KernelUrl = "";  //驱动地址
+const char* KernelUrl = "https://caiba123.oss-cn-beijing.aliyuncs.com/FmDriver.sys";  // 驱动存放地址
 
 char* MakeRandomString(DWORD len)
 {
 
-	char str[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char str[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijk";
 
 	char name[256] = { 0 };
 

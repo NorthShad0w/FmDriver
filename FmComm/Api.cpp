@@ -4,8 +4,6 @@
 #include"../FmDriver/Struct.h"
 #include"DriverLoad.h"
 
-
-
 EXTERN_C BOOLEAN WINAPI DriverLoad()
 {
 	return LoadDriver();
@@ -21,8 +19,6 @@ EXTERN_C BOOLEAN WINAPI Fm_QueryMemory(ULONG64 Pid, ULONG64 VirtualAddress, PFMM
 	return DriverComm(CMD_QUERYMEMORY, (PVOID)&Info, sizeof(QueryMemoryInfo));
 
 }
-
-
 
 EXTERN_C ULONG64 WINAPI Fm_GetModule(ULONG64 Pid, char* ModuleName)
 {

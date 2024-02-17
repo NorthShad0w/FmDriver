@@ -85,7 +85,7 @@ VOID DriverUnload(PDRIVER_OBJECT pDriver)
 {
 	UnRegisterComm;
 
-	DbgPrint("驱动卸载成功！\r\n");
+	//DbgPrint("驱动卸载成功！\r\n");
 }
 
 
@@ -94,7 +94,7 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT pDriver, PUNICODE_STRING pReg_Path)
 
 	if (RegisterComm(DispatchCallBack))
 	{
-		//DbgPrintEx(77, 0, "注册成功 \r\n");
+		//DbgPrintEx(77, 0, "通讯成功 \r\n");
 	}
 
 	pDriver->DriverUnload = DriverUnload;
