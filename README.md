@@ -6,8 +6,12 @@
       3.获取模块
       4.伪装进程
       5.查询内存
- # 驱动注入演示
+ # PUBG注入演示
 https://caiba123.oss-cn-beijing.aliyuncs.com/bandicam%202024-02-17%2018-35-41-357.mp4
+![image](https://github.com/HOOK11/PUBG-DX/blob/master/img/QQ%E5%9B%BE%E7%89%8720231004162338.png)
+
+# 读写演示
+
 
 # 建议参考
       1.驱动读写建议CV https://github.com/rogxo/ReadPhys
