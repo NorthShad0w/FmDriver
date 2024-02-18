@@ -49,30 +49,7 @@ DWORD GetProcessID(LPCTSTR lpProcessName)//根据进程名查找进程PID
 }
 int main(int argc,char * argv[]) 
 {
-   // ULONG PID = GetProcessID("MfcRwProcss.exe"); //59480;
 
-   // ULONG64 Mudlue =  Fm_GetModule(PID, "MfcRwProcss.exe");
-
-   // printf("Mudlue -> %llx \r\n", Mudlue);
-
-   // unsigned char buffer[10] = { 0 };
-   // printf("{ ");
-   //// ULONG64 buffer = 0;
-   // 
-   // Fm_ReadMemory(PID, Mudlue, buffer, sizeof(buffer));
-
-   // for (int i = 0; i < sizeof(buffer); i++)
-   // {
-   //     printf("0x%02X", buffer[i]);
-   // }
-   // printf("} \r\n");
-   // char bufw[10] = { 0 };
-   // memset(bufw, 0x80, 10);
-   // Fm_WriteMemory(PID, Mudlue, bufw, sizeof(bufw));
-
-  //  ULONG64 FakePid =  GetProcessID("winlogon.exe");
-
-     // Fm_FakeProcess(PID, FakePid);
     BOOLEAN ret;
 
     ret =   DriverLoad();
@@ -102,3 +79,27 @@ int main(int argc,char * argv[])
 
     system("pause");
 }
+// ULONG PID = GetProcessID("MfcRwProcss.exe"); //59480;
+
+// ULONG64 Mudlue =  Fm_GetModule(PID, "MfcRwProcss.exe");
+
+// printf("Mudlue -> %llx \r\n", Mudlue);
+
+// unsigned char buffer[10] = { 0 };
+// printf("{ ");
+//// ULONG64 buffer = 0;
+// 
+// Fm_ReadMemory(PID, Mudlue, buffer, sizeof(buffer));
+
+// for (int i = 0; i < sizeof(buffer); i++)
+// {
+//     printf("0x%02X", buffer[i]);
+// }
+// printf("} \r\n");
+// char bufw[10] = { 0 };
+// memset(bufw, 0x80, 10);
+// Fm_WriteMemory(PID, Mudlue, bufw, sizeof(bufw));
+
+//  ULONG64 FakePid =  GetProcessID("winlogon.exe");
+
+   // Fm_FakeProcess(PID, FakePid);

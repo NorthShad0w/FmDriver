@@ -4,9 +4,23 @@
 #include"../FmDriver/Struct.h"
 #include"DriverLoad.h"
 
+BOOLEAN Fm_InitComm()
+{
+	ULONG X = 0;
+	return DriverComm(CMD_INIT, (PVOID)&X, sizeof(X));
+}
+
 EXTERN_C BOOLEAN WINAPI DriverLoad()
 {
-	return LoadDriver();
+
+	if (Fm_InitComm())  //通讯成功就不需要再次加载了
+	{
+		return TRUE;
+	}
+	else {
+		return LoadDriver();
+	}
+	
 }
 
 EXTERN_C BOOLEAN WINAPI Fm_QueryMemory(ULONG64 Pid, ULONG64 VirtualAddress, PFMMEMORY_BASIC_INFORMATION InfoMode)

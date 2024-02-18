@@ -81,23 +81,20 @@ NTSTATUS NTAPI  DispatchCallBack(PVOID CommInfo)
 	return status;
 }
 
-VOID DriverUnload(PDRIVER_OBJECT pDriver)
-{
-	UnRegisterComm;
-
-	//DbgPrint("驱动卸载成功！\r\n");
-}
+//VOID DriverUnload(PDRIVER_OBJECT pDriver)
+//{
+//	UnRegisterComm;
+//
+//	//DbgPrint("驱动卸载成功！\r\n");
+//}
 
 
 NTSTATUS DriverEntry(PDRIVER_OBJECT pDriver, PUNICODE_STRING pReg_Path)
 {
 
-	if (RegisterComm(DispatchCallBack))
-	{
-		//DbgPrintEx(77, 0, "通讯成功 \r\n");
-	}
+	RegisterComm(DispatchCallBack);
 
-	pDriver->DriverUnload = DriverUnload;
+	//pDriver->DriverUnload = DriverUnload;
 
 	return STATUS_SUCCESS;
 }
